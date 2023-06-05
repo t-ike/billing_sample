@@ -3,15 +3,16 @@ package entities
 import "time"
 
 type Employee struct {
-	id                     int32
-	hourlyWage             int32
-	monthlySalary          int32
-	bonus                  int32
-	receivingType          ReceivingType
-	address                string
-	bankAccountInformation string
-	unionDue               int32
-	payday                 time.Time
+	ID                     int32
+	Name                   string
+	HourlyRate             int32
+	MonthlySalary          int32
+	CommissionRate         int32
+	ReceivingType          ReceivingType
+	Address                string
+	BankAccountInformation string
+	UnionDue               int32
+	Payday                 time.Time
 }
 
 type ReceivingType int32

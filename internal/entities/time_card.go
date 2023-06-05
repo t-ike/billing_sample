@@ -2,9 +2,9 @@ package entities
 
 import "time"
 
-type WorkLog struct {
+type TimeCard struct {
 	id         int32
 	employeeID int32
 	startTime  time.Time
-	endTime    time.Time
+	hours      float32
 }
